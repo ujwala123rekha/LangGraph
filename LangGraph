@@ -1,0 +1,31 @@
+LangGraph::
+        an open-source Python library developed by LangChain, designed to build stateful, 
+        multi-actor applications with Large Language Models (LLMs) by modeling workflows as graphs
+        It enables building complex, agent-like behaviors by introducing cycles, looping, and conditional branching to LLM application
+
+In simple words, 
+         it is an orchestration layer, specifically designed as a low-level orchestration framework and runtime for building,
+          managing, and deploying stateful, multi-agent AI applications.
+
+it is a middleware that automates the workflow,nodes,services for a complex task with memory
+whereas in langchain it is statelss(memory isnt internal) but this is stateful
+it contains nodes,workflows,edges,loops,feedback cycles,control used to build ,maintain and manage the agent works
+
+Agent : a system or program that is capable of autonomously performing tasks on behalf of a user or another system.
+it uses tools and manage maintain the tasks tom complete 
+
+Agents need reliabilty , but for complex info and memory connections we use langgraph 
+
+
+nodes                      functions
+edges                      connections
+directed graphs            the pointing direction
+cyclic graphs               start and end are same
+DAGs                       direction and acyclic
+transitions                the movement from one to other node
+entry_point                 the start point
+end_point                   END
+
+
+State = shared memory flowing through graph.
+Routers = Functions deciding next node.
